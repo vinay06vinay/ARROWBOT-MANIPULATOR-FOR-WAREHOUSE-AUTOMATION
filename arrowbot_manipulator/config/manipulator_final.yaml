@@ -1,0 +1,50 @@
+arrowbot_manipulator:
+   joint_state_controller:
+     type: joint_state_controller/JointStateController
+     publish_rate: 50
+
+   manipulator_controller:
+     type: position_controllers/JointTrajectoryController
+     joints:
+       - ur5_shoulder_pan_joint
+       - ur5_shoulder_lift_joint
+       - ur5_elbow_joint
+       - ur5_wrist_1_joint
+       - ur5_wrist_2_joint
+       - ur5_wrist_3_joint
+     constraints:
+        goal_time: 0.6
+        stopped_velocity_tolerance: 0.05
+        state_publish_rate:  25
+   rear_left_motor: # change the name
+     type: velocity_controllers/JointVelocityController # Type of controller. 
+     joint: rear_left_traction_joint # Name of the joint.  
+     pid : 
+        p : 100.0 # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0} 
+        i : 0.01
+        d : 1.0
+   rear_right_motor: # change the name
+     type: velocity_controllers/JointVelocityController # Type of controller. 
+     joint: rear_right_traction_joint # Name of the joint.  
+     pid : 
+        p : 100.0 # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0} 
+        i : 0.01
+        d : 1.0
+
+   front_left_steering: # change the name
+     type: effort_controllers/JointPositionController # Type of controller. 
+     joint: front_left_steering_joint # Name of the joint.  
+     pid : 
+        p : 100.0 # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0} 
+        i : 0.01
+        d : 1.0 
+   front_right_steering: # change the name
+     type: effort_controllers/JointPositionController # Type of controller. 
+     joint: front_right_steering_joint # Name of the joint.  
+     pid : 
+        p : 100.0 # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0} 
+        i : 0.01
+        d : 1.0 
+
+
+ 
