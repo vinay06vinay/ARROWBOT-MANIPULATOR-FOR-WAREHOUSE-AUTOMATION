@@ -13,4 +13,4 @@ The following objectives were accomplished during the course of this project:
 
 The robots final motion using in gazebo simulation using the solver script can be seen as below:
 
-![](https://github.com/ARROWBOT-MANIPULATOR-FOR-WAREHOUSE-AUTOMATION/doc/robot_pick_place.mp4)
+![](https://github.com/ARROWBOT-MANIPULATOR-FOR-WAREHOUSE-AUTOMATION/doc/robotpickplace.gif)
