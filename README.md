@@ -11,5 +11,6 @@ The following objectives were accomplished during the course of this project:
 2) Integration of a gripper to pickup objects with the manipulator and defining services for the gripper activation
 3) Pick and place from a known pick coordinate to a placing coordinate.
 
-The robots final motion can be seen as below:
+The robots final motion using in gazebo simulation using the solver script can be seen as below:
 
+![](https://github.com/ARROWBOT-MANIPULATOR-FOR-WAREHOUSE-AUTOMATION/doc/robot_pick_place.mp4)
