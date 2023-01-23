@@ -12,5 +12,5 @@ The following objectives were accomplished during the course of this project:
 3) Pick and place from a known pick coordinate to a placing coordinate.
 
 The robots final motion using in gazebo simulation using the solver script can be seen as below:
-
+#GIF
 ![](https://github.com/ARROWBOT-MANIPULATOR-FOR-WAREHOUSE-AUTOMATION/doc/robotpickplace.gif)
